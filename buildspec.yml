@@ -13,6 +13,6 @@ phases:
     commands:
       -echo Build completed
       -zip -r app.zip app/
-  artifacts:
-    files:
-      -app.zip
+artifacts:
+  files:
+    -app.zip
