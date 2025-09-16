@@ -3,16 +3,16 @@ version:0.2
 phases:
   install:
     commands:
-      -echo insatlling dependencies...
-      -pip install -r app/requirements.txt
+      - echo insatlling dependencies...
+      - pip install -r app/requirements.txt
   build:
     commands:
-      -echo Build phase -testing app
-      -python -m unittest discover || true
-  post build:
+      - echo Build phase -testing app
+      - python -m unittest discover || true
+  post_build:
     commands:
-      -echo Build completed
-      -zip -r app.zip app/
+      - echo Build completed
+      - zip -r app.zip app/
 artifacts:
   files:
-    -app.zip
+    - app.zip
